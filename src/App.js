@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <DogSelect onChange={this.onChange.bind(this)}></DogSelect>
-        <img ref={this.dogImage} className="App-DogImage" src=""/>
+        <img ref={this.dogImage} className="App-DogImage" src="" alt="dog"/>
       </div>
     );
   }

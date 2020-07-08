@@ -65,7 +65,7 @@ module.exports = {
     },
     'ngrok-tunnel': {
       enabled: true,
-      addr: 3000,
+      addr: 5000,
       authtoken: NGROK_AUTHTOKEN
     }
   }
