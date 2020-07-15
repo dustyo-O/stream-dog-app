@@ -3,7 +3,7 @@ node_js:
 - 12
 before_script:
 - yarn build
-- if [ "$TRAVIS_BRANCH" != "master" ]; yarn serve -s build&
+- if [ "$TRAVIS_BRANCH" != "master" ]; then yarn serve -s build&
 script:
 - if [ "$TRAVIS_BRANCH" != "master" ]; then npm test
 env:
