@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- 12
+before_script:
+- yarn build
+- yarn serve -s build
+script:
+- npm test
