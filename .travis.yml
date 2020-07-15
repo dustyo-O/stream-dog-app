@@ -3,9 +3,9 @@ node_js:
 - 12
 before_script:
 - yarn build
-- yarn serve -s build&
+- if [ "$TRAVIS_BRANCH" != "master" ]; yarn serve -s build&
 script:
-- npm test
+- if [ "$TRAVIS_BRANCH" != "master" ]; then npm test
 env:
   global:
   - secure: mq5QlYmm8eJyzBwPTsuXEmV2y0NfAWfhq71XsMwinFNrWNfSkAEWa39wmWJRFtJKJSOfrizHRguxV6MAYJLDRYH6j73Eu5b4ypYJwhEbA40Zq85bzgjb+dkgJYfGQSqdT4kYjzrXwbP3D/GYiHaoMBScPsBgEzD5surKUyjZoEBZwzOhQnd88xpriMAJOPhmPJNJPWd8RrLcDfgRL2uneAnbau6i5vWEBuIR8OzBXj7m8y5YfXlt/jyJpTbiamo7AJ4AQ5HLHas9+AmgAlmsXkkWypXRgoiAYtcr8uENFQJZWmYqK60A8mWkRw5sUblaOySvN8hHf6lWE2mR6Y+sA31LWAcoLQWMRTiWsDjKrfB9h8/7Fz6bH1ynXJaIQFRjglz2Re2VVru4hn5wsWpr/Smw9Mr9ev3HhjHzCO1lq4AlH5NoJaO+urSpQA5DM8TYd1VESLofwnQEHXR4Rbtb6ACv13SuWFlGcfsu81P8PncdDPZsAMyYDqAd2OI2OGkfuiCbZ1HvDZRhUfD9bd4U5i7Z1DUDwOOIljRGSs0cSeOwmBIemIVKHNI6tLNgde1jp1bQwEbIQ5h2dwhJv0C4O4IqTYAZQPzA9OVth+758f+/IEmOKfJD9Ow/rFaNm2tFpRfJykd2DMQwi/HF5xJQ43ErNjmokMnDD/9QSZyGKDk=
