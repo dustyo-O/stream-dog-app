@@ -13,7 +13,8 @@
   },
   "devDependencies": {
     "hermione-ngrok-tunnel": "^0.0.1",
-    "html-reporter": "^5.16.4"
+    "html-reporter": "^5.16.4",
+    "wait-port": "^0.2.9"
   },
   "scripts": {
     "start": "react-scripts start",
