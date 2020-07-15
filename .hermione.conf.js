@@ -33,8 +33,8 @@ module.exports = {
   browsers: {
     iphone: {
       desiredCapabilities: {
-        browserName: 'chrome',
-        os: 'Windows',
+        browserName: 'firefox',
+/*        os: 'Windows',
         os_version: '10',
         version: '65.0',
         chromeOptions: {
@@ -55,7 +55,7 @@ module.exports = {
               'Safari/602.1'
             ].join(' ')
           }
-        }
+        }*/
       }
     }
   },
